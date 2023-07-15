@@ -1,10 +1,12 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 import SkillItems from './SkillItems';
 
 
 function About() {
   return (
     <div className='about-me-container' id="about">
+        <Fade cascade>
         <div className='about-title-text'>
             <h1>ABOUT ME</h1>
             <div className='about-line-break'/>
@@ -30,6 +32,7 @@ function About() {
                 <div />
             </div>
         </div>
+        </Fade>
     </div>
   )
 }

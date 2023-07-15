@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 function Contact() {
 
@@ -20,6 +21,7 @@ function Contact() {
 
     return (
         <div className='contacts-container' id="contact"> 
+            <Fade cascade>
             <div className='contact-background-image'>
                 <div className='about-title-text'>
                         <h1>CONTACT</h1>
@@ -49,6 +51,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

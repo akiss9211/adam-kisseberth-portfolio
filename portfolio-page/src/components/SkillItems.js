@@ -6,8 +6,7 @@ import { SiCss3 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { FaReact, FaJava, FaGitAlt, FaGithub } from 'react-icons/fa';
 
-class SkillItems extends React.Component {
-  render() {
+function SkillItems () {
     return (
       <div>
         <Fade right cascade>
@@ -48,7 +47,6 @@ class SkillItems extends React.Component {
         </Fade>
       </div>
     );
-  }
 }
 
 export default SkillItems;

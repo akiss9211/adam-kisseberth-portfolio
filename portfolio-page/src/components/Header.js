@@ -1,30 +1,32 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
 function Header() {
-    let open = false;
-    let arrowElement = <IoIosArrowDroprightCircle className='arrow-icon-button' id="arrow-element"/>;
+        let open = false;
+        let arrowElement = <IoIosArrowDroprightCircle className='arrow-icon-button' id="arrow-element"/>;
 
-const toggleLeftNav = () => {
-    let element = document.getElementById('left-nav-menu-container')
-    let button = document.getElementById('left-nav-expand-button')
-    let arrow = document.getElementById('arrow-element')
+        const toggleLeftNav = () => {
+            let element = document.getElementById('left-nav-menu-container')
+            let button = document.getElementById('left-nav-expand-button')
+            let arrow = document.getElementById('arrow-element')
 
-    if(open === false) {
-        element.style.transform="translateX(0px)";
-        button.style.transform="translateX(0px)";
-        arrow.style.transform="scaleX(-1)";
-        open=true;
-    } else {
-        element.style.transform="translateX(-40px)";
-        button.style.transform="translateX(-40px)";
-        arrow.style.transform="scaleX(1)";
-        open=false;
-    }
+        if(open === false) {
+            element.style.transform="translateX(0px)";
+            button.style.transform="translateX(0px)";
+            arrow.style.transform="scaleX(-1)";
+            open=true;
+        } else {
+            element.style.transform="translateX(-40px)";
+            button.style.transform="translateX(-40px)";
+            arrow.style.transform="scaleX(1)";
+            open=false;
+        }
 }
 
     return (
         <div className='header-container' id="top-of-page">
+            <Fade cascade>
             <div className='header-image'>
                 <div className='header-image-items'>
                     <div className='left-nav-flex'>
@@ -48,6 +50,7 @@ const toggleLeftNav = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
         
     )
