@@ -1,6 +1,7 @@
 import React from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { RiCloseCircleFill } from 'react-icons/ri';
+import Leftnav from './Leftnav';
 
 function TopBar() {
   let open = false;
@@ -52,7 +53,9 @@ function TopBar() {
           </div>
         </ul>
       </div>
+      <Leftnav />
     </div>
+    
   )
 }
 

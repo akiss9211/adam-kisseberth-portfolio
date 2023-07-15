@@ -6,7 +6,6 @@ function Contact() {
 
     const [name, setUsersName] = useState("");
     const handleEvent = (e) => {
-        if(document.getElementById('name').value.match(/[A-Z]/g)){
             let alertName="Thanks "+document.getElementById('name').value+"!";
             let form=document.getElementById('contact-form');
             setUsersName(alertName)
@@ -16,7 +15,6 @@ function Contact() {
             setTimeout(() => {
                 setUsersName("");
             }, 8000);
-        }
     }
 
     return (
