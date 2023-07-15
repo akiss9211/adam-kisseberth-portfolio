@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/adam-kisseberth-portfolio/static/css/main.581d0d08.css",
-    "main.js": "/adam-kisseberth-portfolio/static/js/main.48ab9acc.js",
+    "main.css": "/adam-kisseberth-portfolio/static/css/main.af107f6e.css",
+    "main.js": "/adam-kisseberth-portfolio/static/js/main.8dfebcc4.js",
     "static/media/greycubesbackground.jpg": "/adam-kisseberth-portfolio/static/media/greycubesbackground.bfa420ee1a57de4b16f3.jpg",
     "index.html": "/adam-kisseberth-portfolio/index.html",
-    "main.581d0d08.css.map": "/adam-kisseberth-portfolio/static/css/main.581d0d08.css.map",
-    "main.48ab9acc.js.map": "/adam-kisseberth-portfolio/static/js/main.48ab9acc.js.map"
+    "main.af107f6e.css.map": "/adam-kisseberth-portfolio/static/css/main.af107f6e.css.map",
+    "main.8dfebcc4.js.map": "/adam-kisseberth-portfolio/static/js/main.8dfebcc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.581d0d08.css",
-    "static/js/main.48ab9acc.js"
+    "static/css/main.af107f6e.css",
+    "static/js/main.8dfebcc4.js"
   ]
 }
