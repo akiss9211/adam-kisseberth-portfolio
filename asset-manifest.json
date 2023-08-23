@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/adam-kisseberth-portfolio/static/css/main.0c56208e.css",
-    "main.js": "/adam-kisseberth-portfolio/static/js/main.8dfebcc4.js",
+    "main.css": "/adam-kisseberth-portfolio/static/css/main.fd2aa7ca.css",
+    "main.js": "/adam-kisseberth-portfolio/static/js/main.73f6541b.js",
     "static/media/greycubesbackground.jpg": "/adam-kisseberth-portfolio/static/media/greycubesbackground.bfa420ee1a57de4b16f3.jpg",
+    "static/media/backgroundtexturedndapp.jpg": "/adam-kisseberth-portfolio/static/media/backgroundtexturedndapp.96ab74ce050dcb2437c3.jpg",
     "index.html": "/adam-kisseberth-portfolio/index.html",
-    "main.0c56208e.css.map": "/adam-kisseberth-portfolio/static/css/main.0c56208e.css.map",
-    "main.8dfebcc4.js.map": "/adam-kisseberth-portfolio/static/js/main.8dfebcc4.js.map"
+    "main.fd2aa7ca.css.map": "/adam-kisseberth-portfolio/static/css/main.fd2aa7ca.css.map",
+    "main.73f6541b.js.map": "/adam-kisseberth-portfolio/static/js/main.73f6541b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c56208e.css",
-    "static/js/main.8dfebcc4.js"
+    "static/css/main.fd2aa7ca.css",
+    "static/js/main.73f6541b.js"
   ]
 }
