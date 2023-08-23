@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-bar {
   display: flex;
   flex-direction: row;
@@ -308,10 +313,9 @@ html {
 
 .about-right-content {
   height: auto;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 75% 25%;
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #5d5d5d;
   min-width: 200px;
 }
@@ -360,23 +364,41 @@ html {
 }
 
 .proj-item-container {
-  display: grid;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
 }
 
 .proj-list-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
-  height: 900px;
+  align-items: top;
+  flex-wrap: wrap;
+  margin: 100px 10px 100px 10px;
+  gap: 150px;
+}
+.proj-info-text {
+  max-width: 25%;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #5d5d5d;
+}
+.coming-soon-text{
+  font-size: 20px;
+  color: #5d5d5d;
+  text-align: center;
 }
 
 .proj-items {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 200px;
 }
 
 .contacts-container {
@@ -415,7 +437,6 @@ html {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .form-items label {
@@ -519,6 +540,17 @@ html {
   font-size: 30px;
   font-weight: bold;
   transition: .3s;
+}
+@media screen and (max-width: 1550px) {
+    .proj-item-container {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .proj-info-text {
+      max-width: 100%;
+      margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
