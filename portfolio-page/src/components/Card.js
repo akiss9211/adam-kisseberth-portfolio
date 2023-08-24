@@ -14,8 +14,7 @@ function Card({ items, setInventory, inventory, filter, setfilter }) {
                 }
             ]);
     }
-
-  return (
+    return (
     // Input detects change of state with onChange and checks to make sure input isnt empty.
     // If empty it sets filtered state to null so nothing is rendered.
     // If it contains characters its held in state and passed to the rendering method
@@ -30,14 +29,15 @@ function Card({ items, setInventory, inventory, filter, setfilter }) {
             </div>
             <div className='show-all-items-button' onClick={(e) => {
                 let arrow = document.getElementById('down-arrow')
-                if(filter === null){
+                if(filter === null) {
                     setfilter('');
                     arrow.style.transform="scaleY(-1)";
                 } else {
                     setfilter(null);
                     arrow.style.transform="scaleY(1)";
                 }
-                }}>{downarrow}</div> 
+                }}>{downarrow}
+            </div> 
             <div className='search-area'>
                 {items.filter(item => item.index.includes(filter)).map(myItem => {
                     //When the card is rendered we set the value of the button to the current myItem.name being mapped
@@ -46,7 +46,6 @@ function Card({ items, setInventory, inventory, filter, setfilter }) {
                             <div className='search-item-name'>{myItem.name}</div>
                             <button className='add-item' value={myItem.name} type="submit" onClick={(e) => updateInventory(e.target.value)}>Add</button>
                         </div>
-                
                 })}
             </div>
         </div>

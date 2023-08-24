@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { ImHtmlFive } from 'react-icons/im';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiCss3 } from 'react-icons/si';
+import { SiCss3, SiRedux } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { FaReact, FaJava, FaGitAlt, FaGithub } from 'react-icons/fa';
 
@@ -26,6 +26,10 @@ function SkillItems () {
                 <div className='tech-skill-item'>
                     <div className='tech-icon'><FaReact /></div>
                     <div>React</div>
+                </div>
+                <div className='tech-skill-item'>
+                    <div className='tech-icon'><SiRedux /></div>
+                    <div>Redux</div>
                 </div>
                 <div className='tech-skill-item'>
                     <div className='tech-icon'><FaJava /></div>
