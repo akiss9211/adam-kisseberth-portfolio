@@ -82,6 +82,7 @@
   color: green;
 }
 .add-item:hover {
+  cursor: pointer;
   color: rgb(0, 255, 0);
 }
 
@@ -140,6 +141,7 @@
 }
 
 .inv-button:hover {
+  cursor: pointer;
   color: rgb(255, 0, 0);
 }
 .inv-items-div{
