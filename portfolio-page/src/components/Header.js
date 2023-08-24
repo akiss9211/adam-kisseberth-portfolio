@@ -10,7 +10,7 @@ function Header() {
                 <div className='header-image-items'>
                     <div className='header-image-text'>
                         <p className='name-title' >I'M ADAM KISSEBERTH</p>
-                        <p className='open-statement'>A Front-end Web Developer building websites and web applications that satisfy consumer needs.</p>
+                        <p className='open-statement'>A Front-End Web Developer building websites and web applications that satisfy consumer needs.</p>
                         <div className='project-button'>
                             <a href='#projects'><button>PROJECTS</button></a>
                         </div>

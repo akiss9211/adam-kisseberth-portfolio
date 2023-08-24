@@ -5,7 +5,7 @@ function Footer() {
     <div className='footer-container'>
         <div className='left-footer'>
             <h3>Website by Adam Kisseberth</h3>
-            <p>Front End Developer</p>
+            <p>Front-End Developer</p>
         </div>
         <div className='right-footer'>
             <h3>LINKS</h3>
