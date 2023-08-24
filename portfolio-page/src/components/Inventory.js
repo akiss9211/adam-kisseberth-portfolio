@@ -10,6 +10,7 @@ function Inventory({ inventory, setInventory }) {
         <div className='inv-items-div'>
             {inventory.map(invItem => {
                 return <div className='rendered-items'>
+                    <div className='item-counter'>{invItem.total}</div>
                     <div className='display-item'>{invItem.name}</div>
                     <button className='inv-button' value={invItem.uuid} onClick={(e) => setInventory(inventory.filter(item => item.uuid !== e.target.value))}>X</button>
                 </div>

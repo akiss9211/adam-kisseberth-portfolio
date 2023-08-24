@@ -32,9 +32,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 325px;
+  min-width: 300px;
   height: auto;
-  padding-left: 5px;
+  padding-right: 5px;
   margin-top: 5px;
   outline: 1.5px groove black;
   background-color: #2b2d42;
@@ -42,6 +42,25 @@
 
 .cards:hover {
   outline: 2px groove rgb(120, 120, 120);
+}
+.show-all-items-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  transition: .3s;
+  color:black;
+  background-color: #ffd100;
+}
+.show-all-items-button:hover {
+  cursor: pointer;
+  color:#929292;
+}
+
+.search-area {
+  overflow: auto;
+  max-height: 600px;
 }
 
 .search-item-name {
@@ -128,7 +147,8 @@
   margin-top: 10px;
   padding-left: 10px;
   border-left: 3px dotted #9a8c98;
-  min-height: 500px;
+  min-height: 600px;
+  height: 100%;
   min-width: 300px;
 }
 
