@@ -121,6 +121,7 @@
   justify-content: space-between;
   min-width: 300px;
   background-color: #2b2d42;
+  margin-top: 5px;
   outline: 1.5px groove black;
 }
 
