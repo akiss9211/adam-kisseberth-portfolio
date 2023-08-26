@@ -12,7 +12,6 @@ function Projects() {
   const [inventory, setInventory] = useState([]);
  //state to hold and update current filter string from input
   const [filter, setfilter] = useState();
-
  //gets local storage inventory save and sets inventory state with data
  //by parsing into JS objects
  //checks to see if inventory save exists in local storage before retrieving
@@ -58,8 +57,8 @@ function Projects() {
                 <p>This app was created out of a fun project idea for my D&D group! It starts by fetching the equipment endpoint of the <b>https://www.dnd5eapi.co/</b> API. After the data is fetched, it is then saved to the items state by parsing the data into JSON objects. I store the value from the input box into a different piece of state, to be used as a filter, before mapping out which items need rendered into the search list. These items have a button that allow you to add them to the inventory, onClick, by mapping those objects along side a UUID and storing them in the inventory state. Everytime the inventory updates, the inventory state is saved into local storage so that your items persists through closing out the webpage and refreshing. The items have a button attatched to remove unwanted items by calling the filter method and filtering out the object with the specific UUID value passed to it by the button click. I still have plans to keep developing this app with other improvements as I have already made a list of features I would like to implement!</p>
               </div>
               <div className='component-container-invapp'>
-                <Card items={items} setInventory={setInventory} inventory={inventory} filter={filter} setfilter={setfilter}/>
-                <Inventory inventory={inventory} setInventory={setInventory}/>
+                <Card items={items} setInventory={setInventory} inventory={inventory} filter={filter} setfilter={setfilter} />
+                <Inventory inventory={inventory} setInventory={setInventory} />
               </div>
             </div>
         </div>

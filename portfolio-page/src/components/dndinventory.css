@@ -117,10 +117,10 @@
 .rendered-items {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   min-width: 300px;
   background-color: #2b2d42;
-  margin-top: 5px;
   outline: 1.5px groove black;
 }
 
@@ -144,6 +144,39 @@
   cursor: pointer;
   color: rgb(255, 0, 0);
 }
+
+.item-count-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item-counter {
+  color: lightgrey;
+}
+
+.plus-count-button {
+  font-size: 20px;
+  background-color: #2b2d42;
+  border: none;
+  color: green;
+}
+
+.plus-count-button:hover {
+  cursor: pointer;
+  color: rgb(0, 255, 0);
+}
+
+.minus-count-button {
+  font-size: 20px;
+  background-color: #2b2d42;
+  border: none;
+  color: rgb(118, 1, 1);
+}
+.minus-count-button:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+}
+
 .inv-items-div{
   transition: .4s;
   margin-top: 10px;

@@ -11,7 +11,8 @@ function Card({ items, setInventory, inventory, filter, setfilter }) {
                 {
                     uuid: uuidv4(),
                     name: invItem,
-                }
+                    total: 1
+                }   
             ]);
     }
     return (
