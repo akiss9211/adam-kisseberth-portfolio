@@ -1,6 +1,7 @@
 
 .component-container-invapp{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   border: 5px ridge #ffd100;/*#22223b;*/
@@ -9,15 +10,104 @@
   box-shadow: inset 1px 1px 12px black;
   padding: 10px;
 }
+.currency-inv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.search-h1 {
+.inventory-title-text{
+  color: white;
+}
+
+.all-currencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.currencies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -20px;
+  gap: 15px;
+  align-items: center;
+}
+.coin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+.currency-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+}
+.currency-input {
+  text-align: center;
+  background-color: #2b2d42;
+  border: none;
+  width: 25px;
+  color:white;
+}
+
+.search-inv-components {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sub-headings {
   color: #f2e9e4;
   font-family: 'Amatic SC', cursive;
 }
 
-.inv-h1 {
-  color: #f2e9e4;
-  font-family: 'Amatic SC', cursive;
+.plat-text {
+  color: #E5E4E2;
+}
+.gold-text {
+  color: gold;
+}
+.silver-text {
+  color: silver;
+}
+.copper-text {
+  color: #B87333;
+}
+.add-coins-button {
+  cursor: pointer;
+  transition: .4s;
+  border: none;
+  width: 15px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 17px;
+  color: green;
+}
+.add-coins-button:hover {
+  color: rgb(0, 255, 0);
+}
+
+.sub-coins-button {
+  cursor: pointer;
+  transition: .4s;
+  border: none;
+  width: 15px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(59, 0, 0);
+}
+
+.sub-coins-button:hover {
+  color: rgb(255, 0, 0);
 }
 
 .card-container {

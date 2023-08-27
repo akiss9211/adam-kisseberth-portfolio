@@ -34,7 +34,7 @@ function Card({ items, setInventory, inventory, filter, setfilter }) {
     <div className='card-container'>
         <div className='search-container'>
             <div className='inputs-container'>
-                <h1 className='search-h1'>Search Items</h1>
+                <h1 className='sub-headings'>Search Items</h1>
                 <input className='input-box' placeholder={'Type to search...'} type="text" 
                 value={filter} onChange={(e) => {e.target.value==='' ? setfilter(null):setfilter(e.target.value.toLowerCase())}}></input>
             </div>

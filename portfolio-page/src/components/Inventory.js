@@ -5,7 +5,7 @@ import React from "react"
 function Inventory({ inventory, setInventory }) {
   return (
     <div className='inventory-container'>
-        <h1 className='inv-h1'>Inventory</h1>
+        <h1 className='sub-headings'>Inventory</h1>
         <div className='inv-items-div'>
             {inventory.map(invItem => {
                 return <div className='rendered-items'>
