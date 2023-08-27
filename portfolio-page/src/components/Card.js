@@ -6,14 +6,24 @@ function Card({ items, setInventory, inventory, filter, setfilter }) {
     const downarrow = <BsArrowBarDown id="down-arrow"/>
     //add items to inventory state making sure to not overide previous state by using the spread operator 
     const updateInventory = (invItem) => {
+        if(inventory.some(invName => invName.name === invItem)){
+            setInventory(inventory.map(item => {
+                if(item.name === invItem && item.total >= 1) {
+                    return {...item, total: item.total + 1}
+                } else {
+                    return item
+                }
+            }))
+        } else {
             setInventory([
                 ...inventory, 
-                {
-                    uuid: uuidv4(),
+                { 
+                    uuid: uuidv4(), 
                     name: invItem,
                     total: 1
-                }   
+                }
             ]);
+        }
     }
     return (
     // Input detects change of state with onChange and checks to make sure input isnt empty.
