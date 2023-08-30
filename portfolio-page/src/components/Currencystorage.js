@@ -3,34 +3,66 @@ import './dndinventory.css';
 import { useState } from 'react';
 
 function Currencystorage({currency, setCurrency}) {
-    const [platCoins, addPlatCoins] = useState(0);
-    const [goldCoins, addGoldCoins] = useState(0);
-    const [silverCoins, addSilverCoins] = useState(0);
-    const [copperCoins, addCopperCoins] = useState(0);
+    const [platCoins, addPlatCoins] = useState(1);
+    const [goldCoins, addGoldCoins] = useState(1);
+    const [silverCoins, addSilverCoins] = useState(1);
+    const [copperCoins, addCopperCoins] = useState(1);
     
     const updateCoins = (type, nums) => {
         if(parseInt(nums) >= 1){
             if(type === "plat"){
-                setCurrency({ platinum: currency.platinum+nums, gold: currency.gold, silver: currency.silver, copper: currency.copper})
+                setCurrency({   platinum: currency.platinum+nums, 
+                                gold: currency.gold, 
+                                silver: currency.silver, 
+                                copper: currency.copper
+                            })
             } else if(type === "gold") {
-                setCurrency({ platinum: currency.platinum, gold: currency.gold+nums, silver: currency.silver, copper: currency.copper})
+                setCurrency({   platinum: currency.platinum, 
+                                gold: currency.gold+nums, 
+                                silver: currency.silver, 
+                                copper: currency.copper
+                            })
             } else if(type === "silver") {
-                setCurrency({ platinum: currency.platinum, gold: currency.gold, silver: currency.silver+nums, copper: currency.copper})
+                setCurrency({   platinum: currency.platinum, 
+                                gold: currency.gold, 
+                                silver: currency.silver+nums, 
+                                copper: currency.copper
+                            })
             } else if(type === "copper") {
-                setCurrency({ platinum: currency.platinum, gold: currency.gold, silver: currency.silver, copper: currency.copper+nums })
+                setCurrency({   platinum: currency.platinum, 
+                                gold: currency.gold, 
+                                silver: currency.silver, 
+                                copper: currency.copper+nums 
+                            })
             }
         }
     }
     const reduceCoins = (type, nums) => {
         if(parseInt(nums) >= 1){
             if(type === "plat"){
-                setCurrency({ platinum: currency.platinum-nums, gold: currency.gold, silver: currency.silver, copper: currency.copper})
+                setCurrency({   platinum: currency.platinum-nums, 
+                                gold: currency.gold, 
+                                silver: currency.silver, 
+                                copper: currency.copper
+                            })
             } else if(type === "gold") {
-                setCurrency({ platinum: currency.platinum, gold: currency.gold-nums, silver: currency.silver, copper: currency.copper})
+                setCurrency({   platinum: currency.platinum, 
+                                gold: currency.gold-nums, 
+                                silver: currency.silver, 
+                                copper: currency.copper
+                            })
             } else if(type === "silver") {
-                setCurrency({ platinum: currency.platinum, gold: currency.gold, silver: currency.silver-nums, copper: currency.copper})
+                setCurrency({   platinum: currency.platinum, 
+                                gold: currency.gold, 
+                                silver: currency.silver-nums, 
+                                copper: currency.copper
+                            })
             } else if(type === "copper") {
-                setCurrency({ platinum: currency.platinum, gold: currency.gold, silver: currency.silver, copper: currency.copper-nums })
+                setCurrency({   platinum: currency.platinum, 
+                                gold: currency.gold, 
+                                silver: currency.silver, 
+                                copper: currency.copper-nums 
+                            })
             }
         }
     }

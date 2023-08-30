@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='footer-container'>
         <div className='left-footer'>
-            <h3>Website by Adam Kisseberth</h3>
+            <h3>Website by Adam Kisseberth <br/>(Powered by React.js)</h3>
             <p>Front-End Developer</p>
         </div>
         <div className='right-footer'>
